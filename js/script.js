@@ -31,3 +31,31 @@ navLinks.forEach(link => {
     });
 
 });
+
+
+// javascript loginform
+
+function sendWhatsApp() {
+
+    const phone = "7667031034"; 
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const whatsappMessage =
+`Hello Chandru,
+
+👤 Name: 
+📧 Email:
+📌 Subject: 
+
+💬 Message:
+${message}`;
+
+    const url = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(url, "_blank");
+
+}
