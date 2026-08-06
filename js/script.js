@@ -47,9 +47,9 @@ function sendWhatsApp() {
     const whatsappMessage =
 `Hello Chandru,
 
-👤 Name: 
-📧 Email:
-📌 Subject: 
+👤 Name: ${name}
+📧 Email: ${email}
+📌 Subject: ${subject}
 
 💬 Message:
 ${message}`;
