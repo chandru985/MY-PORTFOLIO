@@ -51,8 +51,7 @@ function sendWhatsApp() {
 📧 Email: ${email}
 📌 Subject: ${subject}
 
-💬 Message:
-${message}`;
+💬 Message: ${message}`;
 
     const url = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
 
